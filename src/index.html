@@ -5,147 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="./script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-
-                <span class="self-center text-4xl font-bold whitespace-nowrap text-purple-800">Janhvi</span>
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-3xl font-bold whitespace-nowrap  text-purple-600">Janhvi</span>
             </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+          <span class="sr-only">Open user menu</span>
+          <img class="w-10 h-10 rounded-full object-cover" src="/img/janhvi-img.jpg" alt="janhvi photo">
+        </button>
+                <!-- Dropdown menu -->
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                    <div class="px-4 py-3">
+                        <span class="block text-sm text-gray-900 dark:text-white">Janhvi Rangdal</span>
+                        <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">janhvirangdal@gmail.com</span>
+                    </div>
+
+                </div>
+                <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-user" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About me</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- First Section -->
-    <div id="content-container" class="bg-black text-white md:text-center ">
-        <div id="content" class="flex flex-col   justify-center items-center  h-98">
-            <div>
-                <div class=" py-2  text-transparent bg-clip-text  bg-gradient-to-r to-emerald-600 from-sky-400">Hello!</div>
-                <h1 class="text-5xl py-2">I'm a
-                </h1>
-                <span class=" font-sans text-5xl py-2 text-transparent bg-clip-text  bg-gradient-to-r to-emerald-600 from-sky-400">Front-end Developer</span>
-            </div>
-        </div>
+    <div class=" h-auto mt-20 flex flex-col  justify-center items-center text-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">Hello! </h1>
+
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"><span class="bg-clip-text bg-gradient-to-r to-sky-600 from-purple-400">
+            I'm Janhvi
+        </span></h1>
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl  bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400">Front-end Developer
+
+        </h1>
+
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        Learn more
+            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+           </svg>
+         </a>
     </div>
 
-    <!-- second-section -->
-    <div id="skills-container" class="bg-black flex justify-center  text-center  text-white h-auto w-">
-        <div id="skills">
-            <div class="py-6  ">
-                <i class="fa-solid fa-arrow-turn-down rotate-180 px-5"></i>
-                <span class="text-4xl font-bold  ">Skills</span>
-                <i class="fa-solid fa-arrow-turn-down px-5 "></i>
-            </div>
-            <div class="tools flex m-30">
 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-10 ">
-
-                    <div class="h-auto w-100  ">
-                        <div id="tools " class="flex flex-wrap flex-col border-1 p-8 rounded-lg mx-10 hover:bg-gray-700">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium dark:text-white">HTML</span>
-                                <span class="text-sm font-medium dark:text-white">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-5 ">
-                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
-
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium dark:text-white">css</span>
-                                <span class="text-sm font-medium dark:text-white">60%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-5">
-                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
-                            </div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium dark:text-white">Javascript</span>
-                                <span class="text-sm font-medium dark:text-white">50%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-5">
-                                <div class="bg-blue-600 h-2.5 rounded-full" style="width:50%"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="h-auto w-100 border-1 rounded-lg p-5 hover:bg-gray-700">
-                        <div class="flex  my-3">
-                            <span class="text-base font-medium dark:text-white">React</span>
-                        </div>
-
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">Bootstrap</span>
-                        </div>
-
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">Tailwind</span>
-                        </div>
-                    </div>
-                    <div class="h-40 w-40 border-1 rounded-lg p-5  hover:bg-gray-700">
-
-                        <div class="flex  my-3">
-                            <span class="text-base font-medium dark:text-white">VS Code</span>
-                        </div>
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">GitHub</span>
-                        </div>
-
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">PhotoShop</span>
-                        </div>
-
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">Premier Pro</span>
-                        </div>
-                        <div class="flex  mb-3">
-                            <span class="text-base font-medium dark:text-white">Figma</span>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
+    <div class="h-auto w-full flex flex-wrap flex-col items-center text-center mt-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center  text-center py-10">
+            <h1 class="text-3xl text-gray-800 font-bold">Tools</h1>
+            <span class="w-16 h-1 border-b-2  rounded-2xl bg-amber-600 "></span>
         </div>
+
+
     </div>
 
-    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center">
-        <div class="w-full h-auto flex flex-wrap">
-            <p>About me</p>
-            <div></div>
-        </div>
+    <div class="flex flex-wrap justify-center items-center mt-8">
+        <ol class=" text-gray-500 flex flex-col justify-center items-center text-center border-gray-200 dark:border-gray-700 p-6 dark:text-gray-400">
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">HTML5</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">CSS</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">Javascript</h3>
+            </li>
+            <li class="ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">VS Code</h3>
+            </li>
+        </ol>
+        <ol class=" text-gray-500  border-s  flex flex-col justify-center items-center text-center border-gray-200 dark:border-gray-700 p-6 dark:text-gray-400">
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">React</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">Bootstrap</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">Tailwind</h3>
+            </li>
+
+        </ol>
+        <ol class=" text-gray-500 border-s flex flex-col justify-center items-center text-center border-gray-200 dark:border-gray-700 p-6 dark:text-gray-400">
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">GitHub</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">Premier Pro</h3>
+            </li>
+            <li class="mb-5 ms-6">
+                <h3 class="font-medium text-xl  -tight cursor-pointer">Photoshop CS6</h3>
+            </li>
+            <li class="ms-6">
+                <h3 class="font-medium text-xl leading-tight cursor-pointer">Figma</h3>
+            </li>
+        </ol>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
