@@ -8,10 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
 <body>
 
     <!-- navbar start here -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
+
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt=" Logo" /> -->
@@ -20,7 +28,7 @@
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
           <span class="sr-only">Open user menu</span>
-          <img class="w-10 h-10 rounded-full object-cover" src="/img/janhvi-img.jpg" alt="janhvi photo">
+          <!-- <img class="w-10 h-10 rounded-full object-cover" src="/images/janhvi.jpg" alt="janhvi photo"> -->
         </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
@@ -41,13 +49,13 @@
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
                 <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                        <a href="#hero-section" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About me</a>
+                        <a href="#Aboutme-section" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About me</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        <a href="#skills-section" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
                     </li>
                     <li>
                         <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
@@ -62,60 +70,131 @@
     <!-- navbar end -->
 
     <!-- hero section start -->
-    <div class=" h-auto mt-20 flex flex-col  justify-center items-center text-center mb-10">
-        <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">Hello! </h1>
+    <div class=" h-screen w-full    background: linear-gradient( rgba(3, 94, 139, .93), rgba(0, 203, 169, .73), rgba(0,   225, 80, .04)), linear-gradient( transparent, rgba(0, 225, 117, .64));">
+        <section id="hero-section" class="h-screen flex flex-col  justify-center items-center text-center ">
 
-        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-purple-400">
-            I'm Janhvi
-        </span></h1>
-        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl text-transparent  bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400">Front-end Developer
+            <div class=" h-auto mt-20 flex flex-col  justify-center items-center text-center mb-10">
+                <h1 class="mb-8 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">Hello! </h1>
 
-        </h1>
+                <h1 class="mb-5 text-5xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-purple-400">
+                I'm Janhvi
+            </span></h1>
+                <h1 class="mb-5 text-5xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl text-transparent  bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400">Front-end Developer
 
-        <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-        Learn more
+                </h1>
+
+                <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+           Learn more
             <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
            </svg>
          </a> -->
-    </div>
-    <!-- hero section start -->
+            </div>
 
-    <!-- Tools section start -->
-    <div class="h-auto w-full flex flex-wrap flex-col items-center text-center mt-10">
-        <div class="w-full h-auto flex flex-wrap flex-col items-center  text-center py-10">
-            <h1 class="text-3xl text-gray-800 font-bold">Tools</h1>
-            <span class="w-16 h-1 border-b-2  rounded-2xl bg-amber-600 "></span>
+        </section>
+    </div>
+    <!-- hero section end -->
+
+    <!-- Skills section start -->
+
+    <section id="skills-section" class="mb-10 h-screen bg-white dark:bg-gray-900 py-16">
+        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <h2 class="mb-8 lg:mb-16 text-4xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-5xl">Skills</h2>
+            <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+
+                <a href="#" class="flex flex-col justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/html.png" alt="">
+                    <span class="py-2 font-bold text-black">HTML</span>
+                </a>
+
+                <a href="#" class="flex flex-col  justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/logo-react.png" alt="">
+                    <span class="py-2 font-bold text-black">React</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/css-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">CSS</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/JavaScript-Logo.png" alt="">
+                    <span class="py-2 font-bold text-black">Javascript</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/vs-code-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">VS Code</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/bootstrap-5-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">Bootstrap</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/Tailwind_CSS_Logo.png" alt="">
+                    <span class="py-2 font-bold text-black">Tailwind</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/photoshop_PNG.png" alt="">
+                    <span class="py-2 font-bold text-black">Photoshop</span>
+                </a>
+                <a href="#" class="flex  flex-col justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/adobe-premiere-pro-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">Premier Pro</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/github_PNG.png" alt="">
+                    <span class="py-2 font-bold text-black">GitHub</span>
+                </a>
+                <a href="#" class="flex  flex-col justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/figma-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">Figma</span>
+                </a>
+                <a href="#" class="flex flex-col  justify-center items-center mb-3">
+                    <img class="h-20 hover:text-gray-900 dark:hover:text-white" src="/images/mui-logo.png" alt="">
+                    <span class="py-2 font-bold text-black">MUI</span>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="flex flex-wrap justify-center items-center mt-8">
-        <ol class=" text-gray-500 flex flex-col justify-center items-center text-center border-gray-200 dark:border-gray-700 p-6 dark:text-gray-400">
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">HTML5</h3>
-            </li>
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">CSS</h3>
-            </li>
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">Javascript</h3>
-            </li>
-            <li class="ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">VS Code</h3>
-            </li>
-        </ol>
-        <ol class=" text-gray-500  border-s  flex flex-col justify-center items-center text-center border-gray-200 dark:border-gray-700 p-6 dark:text-gray-400">
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">React</h3>
-            </li>
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">Bootstrap</h3>
-            </li>
-            <li class="mb-5 ms-6">
-                <h3 class="font-medium text-xl leading-tight cursor-pointer">Tailwind</h3>
-            </li>
+    </section>
 
-        </ol>
-    </div>
+    <section id="Aboutme-section" class="h-screen bg-white dark:bg-gray-900 py-35 my-10  transition-all ease-in duration-75">
+        <h2 class="mb-8 m-5 my-5 lg:mb-10 text-4xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-5xl">About me</h2>
+        <div class="text-center lg:py-16 mx-auto max-w-screen-xl px-4">
+
+            <div class="grid items-center max-w-screen-xl px-4 py-7 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12
+             border  border-white-500 rounded-lg hover:bg-cream-200 lg:mb-8  ">
+                <ul class="mr-auto place-self-center lg:col-span-7 md:ml-20">
+                    <li class="flex text-xl items-center space-x-3 text-black font-bold mb-4 cursor-pointer">
+                        <span>Name</span>
+                        <span>:</span>
+                        <span class="mx-4">Janhvi Rangdal</span>
+                    </li>
+                    <li class="flex text-xl items-center space-x-3 text-black font-bold mb-4 cursor-pointer ">
+                        <span>Date Of Birth</span>
+                        <span>:</span>
+                        <span class="mx-4">08 october 1999</span>
+                    </li>
+                    <li class="flex text-xl items-center space-x-3 text-black font-bold mb-5 cursor-pointer">
+                        <span>Address</span>
+                        <span>:</span>
+                        <span class="mx-4">Patancheru, Hyderabad</span>
+                    </li>
+                    <li>
+                        <button class=" relative inline-flex  items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm   font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600       group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4   focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent font-bold font-25">
+                           Download CV
+                            </span>
+                            </button>
+                    </li>
+
+                </ul>
+                <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
 </body>
 
 </html>
